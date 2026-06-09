@@ -1,0 +1,1 @@
+# action-github-changelog-generator
