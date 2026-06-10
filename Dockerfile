@@ -1,4 +1,4 @@
-FROM ruby:3.4-alpine AS builder
+FROM ruby:3.4-alpine@sha256:8a962e98ec8b999097accdf3bdc564c7a5f67360f4d418c0074e7fa49b148185 AS builder
 
 SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 
@@ -15,7 +15,7 @@ RUN apk add --no-cache \
   && rm -rf "$GEM_HOME"/cache \
   && apk del .gem-installdeps
 
-FROM ruby:3.4-alpine
+FROM ruby:3.4-alpine@sha256:8a962e98ec8b999097accdf3bdc564c7a5f67360f4d418c0074e7fa49b148185
 
 RUN apk add --no-cache \
   git \
