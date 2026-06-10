@@ -186,4 +186,4 @@ outputs:
     description: "Contents of generated change log."
 runs:
   using: "docker"
-  image: "Dockerfile"
+  image: "docker://ghcr.io/step-security/action-github-changelog-generator:v2.4.0@sha256:1786ab2c4ee109a6c6c688acd9d4471f0a1ed346fa04a4ce347bd81d2365d7a6" # v2.4.0
